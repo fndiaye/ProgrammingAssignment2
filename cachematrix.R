@@ -16,21 +16,21 @@
 makeCacheMatrix <- function(x = matrix()) {
       matrixInverse <- NULL
       
-      ## this sub-function assignes a value to x
+      ## This sub-function assignes a value to x
       ##'y': the matrix to assigned to x
       setMatrix <- function(y) {
         x <<- y
         matrixInverse <<- NULL
       }
       
-      ## this sub-function retrieves the value of x
+      ## This sub-function retrieves the value of x
       getMatrix <- function() x
       
-      ## this sub-function assignes a value to matrixInverse for caching
+      ## This sub-function assignes a value to matrixInverse for caching
       ##'matrice': a inverse matrix
       setMatrixInverse <- function(matrice) matrixInverse <<- matrice
     
-      ## this sub-function retrieves the value of the cached matrix inverse
+      ## This sub-function retrieves the value of the cached matrix inverse
       getMatrixInverse <- function() matrixInverse
     
       ## Returns a list of these 4 functions
